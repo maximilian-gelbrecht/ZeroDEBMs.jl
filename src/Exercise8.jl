@@ -1,5 +1,11 @@
 module Exercise8
 
-# Write your package code here.
+using Parameters 
+
+include("zero-d-embs.jl")
+
+export ZeroDEBM 
+export IncomingRadiation, TanhAlbedo, PiecewiseLinearAlbedo
+export StefanBoltzmannRadiation, BudykoRadiation
 
 end
