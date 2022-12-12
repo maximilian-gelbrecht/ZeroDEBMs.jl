@@ -33,8 +33,9 @@ abstract type AbstractOutgoingRadiation{T} end
 # Fields 
 
 * `R_in::AbstractIncomingRadiation`
-* `R_out`::AbstractOutgoingRadiation
+* `R_out`::AbstractOutgoingRadiation`
 
+As default it constructs a EBM with a tanh-albedo and Boltzmann outgoing radiation. 
 """
 @with_kw struct ZeroDEBM{T} <: AbstractZeroDEBM{T} 
     R_in::AbstractIncomingRadiation{T} = IncomingRadiation()
@@ -56,7 +57,7 @@ Implements the incoming radiation given by the formula
 
 ```math
 \begin{aligned}
-    R_in(T,p) = (1 - α(T,p)) \frac{S_0}{4}
+    R_{in}(T,p) = (1 - α(T,p)) \frac{S_0}{4}
 \end{aligned}
 ```
 
@@ -113,7 +114,7 @@ Implements the outgoing radiation given by the Stefan Boltzmann law, potentially
 
 ```math 
 \begin{aligned}
-    R_out(T) = \varepsilon\sigma T^4 
+    R_{out}(T) = \varepsilon\sigma T^4 
 \end{aligned}
 ```
 """
@@ -131,7 +132,7 @@ Implements the outgoing radiation given by Budyko's linear approach
 
 ```math 
 \begin{aligned}
-    R_out(T) = A + B\cdot T 
+    R_{out}(T) = A + B\cdot T 
 \end{aligned}
 ```
 
