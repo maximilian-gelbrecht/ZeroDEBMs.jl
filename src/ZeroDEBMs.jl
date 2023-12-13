@@ -1,4 +1,4 @@
-module Exercise8
+module ZeroDEBMs
 
 using Parameters 
 

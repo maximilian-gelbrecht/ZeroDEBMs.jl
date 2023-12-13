@@ -1,13 +1,13 @@
 ```@meta
-CurrentModule = Exercise8
+CurrentModule = ZeroDEBMs
 ```
 
 # Exercise8
 
-Documentation for [Exercise8](https://github.com/maximilian-gelbrecht/Exercise8.jl). This package implements the zero-dimensional energy balance models (EBMs) introduced in the lecture. The models are coded so that different 0D-EBMs can be easily composed. E.g. via 
+Documentation for [ZeroDEBMs](https://github.com/maximilian-gelbrecht/ZeroDEBMs.jl). This package implements the zero-dimensional energy balance models (EBMs) introduced in the lecture. The models are coded so that different 0D-EBMs can be easily composed. E.g. via 
 
 ```julia 
-using Exercise8, OrdinaryDiffEq
+using ZeroDEBMs, OrdinaryDiffEq
 
 model = ZeroDEBM(R_in=IncomingRadiation(α=TanhAlbedo()), R_out=StefanBoltzmannRadiation()) 
 
@@ -19,5 +19,5 @@ sol = solve(prob, Tsit5())
 ```
 
 ```@autodocs
-Modules = [Exercise8]
+Modules = [ZeroDEBMs]
 ```

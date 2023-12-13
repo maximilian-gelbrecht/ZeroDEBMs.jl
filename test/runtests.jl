@@ -1,6 +1,6 @@
-using Exercise8
+using ZeroDEBMs
 using Test, OrdinaryDiffEq
 
-@testset "Exercise8.jl" begin
+@testset "ZeroDEBMs.jl" begin
     include("zero-d-embs.jl")
 end

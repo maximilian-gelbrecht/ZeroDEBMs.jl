@@ -1,16 +1,16 @@
-using Exercise8
+using ZeroDEBMs
 using Documenter
 
-DocMeta.setdocmeta!(Exercise8, :DocTestSetup, :(using Exercise8); recursive=true)
+DocMeta.setdocmeta!(ZeroDEBMs, :DocTestSetup, :(using ZeroDEBMs); recursive=true)
 
 makedocs(;
-    modules=[Exercise8],
+    modules=[ZeroDEBMs],
     authors="Maximilian Gelbrecht <maximilian.gelbrecht@posteo.de> and contributors",
-    repo="https://github.com/maximilian-gelbrecht/Exercise8.jl/blob/{commit}{path}#{line}",
-    sitename="Exercise8.jl",
+    repo="https://github.com/maximilian-gelbrecht/ZeroDEBMs.jl/blob/{commit}{path}#{line}",
+    sitename="ZeroDEBMs.jl",
     format=Documenter.HTML(;
         prettyurls=get(ENV, "CI", "false") == "true",
-        canonical="https://maximilian-gelbrecht.github.io/Exercise8.jl",
+        canonical="https://maximilian-gelbrecht.github.io/ZeroDEBMs.jl",
         edit_link="main",
         assets=String[],
     ),
@@ -20,6 +20,6 @@ makedocs(;
 )
 
 deploydocs(;
-    repo="github.com/maximilian-gelbrecht/Exercise8.jl",
+    repo="github.com/maximilian-gelbrecht/ZeroDEBMs.jl",
     devbranch="main",
 )
