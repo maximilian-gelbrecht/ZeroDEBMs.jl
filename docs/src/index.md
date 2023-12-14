@@ -2,7 +2,7 @@
 CurrentModule = ZeroDEBMs
 ```
 
-# Exercise8
+# ZeroDEBMs.jl
 
 Documentation for [ZeroDEBMs](https://github.com/maximilian-gelbrecht/ZeroDEBMs.jl). This package implements the zero-dimensional energy balance models (EBMs) introduced in the lecture. The models are coded so that different 0D-EBMs can be easily composed. E.g. via 
 
